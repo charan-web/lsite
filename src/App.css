@@ -20,7 +20,7 @@ body{
   background-image:url('ram.png')
 }
 .form-container{
-  position:relative;
+  /* position:relative; */
  border:2px solid rgb(228, 64, 91);
   border-radius:10px;
   padding:1rem 1.5rem 1.5rem 0.5rem;
@@ -65,7 +65,10 @@ body{
 
 }
 .form-container small.correct{
-  color:rgb(29, 126, 29);
+  color:rgb(144, 235, 144);
+}
+.form-container small.error{
+  color:rgb(151, 49, 49);
 }
 .form-container button{
   width:85px;
@@ -85,9 +88,9 @@ body{
 }
 svg{
   position:absolute;
-  left:20%;
-  top:0%;
-  height:300px;
+  left:17%;
+  top:3%;
+  height:150px;
   width:250px;
   pointer-events: none;
 }

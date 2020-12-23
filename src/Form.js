@@ -1,24 +1,87 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 
 function Form(){
-    const fun=()=>{
-        console.log('hi')
+    const [email,setEmail] = useState('')
+    const [password,setPassword] = useState('')
+    const fun=(e)=>{
+        e.preventDefault()
+        let emailfor = 'charan'
+        let passwordfor = 'charan'
+        let error = document.getElementById('emailMsg')
+        let passErr = document.getElementById('passwordMsg')
+        if(email!=='' && password !=="" ){
+         if(email=== emailfor && password ===passwordfor){   
+            error.textContent = 'Email is correct'
+           
+            error.style.display = 'block'
+            error.classList.add('correct')
+            passErr.style.display = 'block'
+            passErr.classList.add('correct')
+            passErr.textContent = 'password is correct'
+            passErr.classList.remove('error')
+            error.classList.remove('error')
+        } 
+        if(email === emailfor && password !==passwordfor){
+            error.classList.remove("error")
+            passErr.classList.remove('correct')
+            error.textContent = "Email is correct"
+            passErr.textContent = "password is wrong"
+            error.style.display = 'block'
+            error.classList.add('correct')
+            passErr.style.display='block'
+            passErr.classList.add("error")
+        }
+        if(email !== emailfor && password === passwordfor){
+            error.classList.add('error')
+            error.textContent = "Email is wrong"
+        }
+        if(email !== emailfor && password !==passwordfor){
+            passErr.style.display="block"
+            error.style.display="block"
+            passErr.classList.add('error')
+            error.classList.add('error')
+            error.textContent = "Email is wrong"
+            passErr.textContent = "Password is wrong"
+        }
+    }else{
+        passErr.style.display="block"
+        error.style.display="block"
+        passErr.classList.add('error')
+        error.classList.add('error')
+        error.textContent = "Email is wrong"
+        passErr.textContent = "Password is wrong"
     }
+        
+    }
+
+
+
+
+   const handleChangeE=(e)=>{
+       let value = e.target.value
+       setEmail(value)
+       console.log(email)
+   }
+   const handleChangeP=(e)=>{
+    let value = e.target.value
+    setPassword(value)
+    console.log(password)
+}
     return(
         <div className="form-div">
         <form className="form-container">
             <div className="email-form">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" placeholder="Type Email here" required  />
-            <small> Email is wrong</small>
+            <input type="email" id="email" value={email} onChange={(e)=>handleChangeE(e)} placeholder="Type Email here" required  />
+            <small id="emailMsg"> Email is wrong</small>
             </div>
             <div className="password-form">
             <label htmlFor="Password">Password</label>
-            <input type="password" id="password" required placeholder="Type Password here" />
-            <small>Password is wrong</small>
+            <input type="password" id="password" value={password} onChange={(e)=>handleChangeP(e)}required placeholder="Type Password here" />
+            <small id="passwordMsg">Password is wrong</small>
             </div>
-            <button type="submit" onClick={fun} >TAKE ME</button>
+            <button type="submit" onClick={(e)=>fun(e)} >TAKE ME</button>
         </form>
 
 
