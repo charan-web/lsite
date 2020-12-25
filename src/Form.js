@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './App.css'
+import Letter from './Letter'
 
 function Form(){
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
+    const [page,setPage]=useState(false)
     const fun=(e)=>{
         e.preventDefault()
         let emailfor = 'charan'
@@ -21,6 +23,7 @@ function Form(){
             passErr.textContent = 'password is correct'
             passErr.classList.remove('error')
             error.classList.remove('error')
+            setPage(true)
         } 
         if(email === emailfor && password !==passwordfor){
             error.classList.remove("error")
@@ -31,6 +34,8 @@ function Form(){
             error.classList.add('correct')
             passErr.style.display='block'
             passErr.classList.add("error")
+         
+           
         }
         if(email !== emailfor && password === passwordfor){
             error.classList.add('error')
@@ -52,10 +57,9 @@ function Form(){
         error.textContent = "Email is wrong"
         passErr.textContent = "Password is wrong"
     }
-        
+       
     }
-
-
+  
 
 
    const handleChangeE=(e)=>{
@@ -66,9 +70,11 @@ function Form(){
    const handleChangeP=(e)=>{
     let value = e.target.value
     setPassword(value)
-    console.log(password)
+    console.log(password)  
 }
     return(
+        <div>
+        {page? <Letter/> :  
         <div className="form-div">
         <form className="form-container">
             <div className="email-form">
@@ -82,6 +88,7 @@ function Form(){
             <small id="passwordMsg">Password is wrong</small>
             </div>
             <button type="submit" onClick={(e)=>fun(e)} >TAKE ME</button>
+            
         </form>
 
 
@@ -93,6 +100,8 @@ function Form(){
 
 
         </div>
-    )
-}
+    
+}</div>
+)}  
+
 export default Form
