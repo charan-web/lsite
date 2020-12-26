@@ -1,17 +1,71 @@
 body{
     width:100%;
     height:100vh;
-    /* display:flex;
-    justify-content: flex-start; */
+    display:flex;
+    justify-content: flex-start;
+}
+h3{
+  font-weight: 700;
+  color:rgb(17, 17, 16);
 }
 img{
     position:absolute;
     width:50px;
-    transition: all 3s ease;
-    bottom:-50px;
+    transition: all 7s ease;
+    /* bottom:-50px; */
     
 
 }
-.fly{
+fly{
+    z-index:9;
    margin-bottom: 1000px;
+}
+.letter{
+   
+    background:rgb(25, 161, 36);
+    color:white;
+}
+.main{
+    /* padding:50px; */
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    /* margin:50px; */
+    width:100%;
+    height:100vh;
+    /* background:#e0a3a3; */
+}
+.main .time{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+  margin-top:50px;
+}
+.letterR{
+   /* background:transparent rgb(229, 153, 153); */
+    /* border:2px solid red; */
+    margin:20px;
+}
+svg{
+    position:relative;
+    width:100%;
+  
+    
+    /* background:red; */
+}
+.image{
+    position:relative;
+    width:100%;
+    margin-right: 10px;
+
+}
+#book{
+    position:relative;
+    width:100%;
+}
+#note{
+    color:red;
 }
