@@ -1,10 +1,10 @@
 import React from 'react'
 import Form from './Form'
-import Letter from './Letter'
+// import Letter from './Letter'
 function App(){
   return (
-    // <Form/>
-    <Letter />
+    <Form/>
+    // <Letter />
   )
 }
 export default App

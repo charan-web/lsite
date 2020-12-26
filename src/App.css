@@ -5,8 +5,8 @@
   box-sizing: 0;
 }
 .form-div{
-  
-  margin-right:2rem;
+  margin-left:1rem;
+  margin-top:2rem;
  
 }
 html{
@@ -87,7 +87,7 @@ body{
 .form-container button:hover{
   background:rgb(247, 55, 87);
 }
-svg{
+.svg{
   position:absolute;
   left:17%;
   top:3%;
