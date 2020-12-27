@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body{
     width:100%;
@@ -51,8 +52,12 @@ img{
 }
 .letterR{
    /* background:transparent rgb(229, 153, 153); */
-    /* border:2px solid red; */
-    margin:20px;
+    border-left:5px solid rgb(34, 168, 68);
+    border-radius: 30px;
+    margin:10px;
+    padding:10px;
+    background-color: rgba(255, 255, 255,.5)
+    
 }
 svg{
     position:relative;
@@ -83,6 +88,20 @@ svg path#ballon{
     border-left: 4px solid red;
     border-radius:30px;
     background:white;
+    margin:10px;
   
 
+}
+.signature{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+    width:100%;
+    
+
+}
+.signature h2{
+    font-family: 'Lobster', cursive;
 }

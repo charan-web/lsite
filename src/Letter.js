@@ -57,16 +57,28 @@ function Letter(){
           <h4>I RESPECTED THAT .BECAUSE IT IS YOUR LIFE 👍👍</h4>
           <img src={propose} alt="book" id="book"/>
 
-          <h2>Note:</h2>
-          <h3 id="note">
-            Decision entha twaraga antha better😊😍.
-            Hey! Please Whatever your Decision.Please tell me your decision where Nobody near us including your friends🙏🙏🙏. Im introvert dont forget that😂😂. Please Please Im begging you Dont share this Link to others.Please this should be between us 🙏🙏🙏. Please Im begging you😰😰😰🙏🙏🙏
-          </h3>
+         
+          
           
 
             
       </div>
-      <p></p>
+      <h2>Note:</h2>
+      <h3 id="note">
+            Decision entha twaraga antha better😊😍.
+            Hey! Please Whatever your Decision.Please tell me your decision where Nobody near us including your friends🙏🙏🙏. Im introvert dont forget that😂😂. Please Please Im begging you Dont share this Link to others.Please this should be between us 🙏🙏🙏. Please Im begging you😰😰😰🙏🙏🙏
+          </h3>
+          <div className='signature'>
+            <h3>Thank You</h3>
+            <div>
+            <h5>Your sincere Follower</h5>
+            <h2>Ch.L.Charan</h2>
+            </div>
+           
+
+          </div>
+
+      
       </div>
      </> 
         
