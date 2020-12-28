@@ -9,7 +9,7 @@ function Form(){
     const fun=(e)=>{
         e.preventDefault()
         let emailfor = 'charan'
-        let passwordfor = 'charan'
+        let passwordfor = 'ramya'
         let error = document.getElementById('emailMsg')
         let passErr = document.getElementById('passwordMsg')
         if(email!=='' && password !=="" ){
@@ -65,12 +65,11 @@ function Form(){
    const handleChangeE=(e)=>{
        let value = e.target.value
        setEmail(value)
-       console.log(email)
+      
    }
    const handleChangeP=(e)=>{
     let value = e.target.value
     setPassword(value)
-    console.log(password)  
 }
     return(
         <div>
