@@ -64,7 +64,7 @@ function Letter(){
       </div>
       <h2>Note:</h2>
       <h3 id="note">
-            Decision entha twaraga antha better😊😍.
+            Decision entha twaraga chepthe antha better😊😍.
             Hey! Please Whatever your Decision.Please tell me your decision where Nobody near us including your friends🙏🙏🙏. Im introvert dont forget that😂😂. Please Please Im begging you Dont share this Link to others.Please this should be between us 🙏🙏🙏. Please Im begging you😰😰😰🙏🙏🙏
           </h3>
           <div className='signature'>
